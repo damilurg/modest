@@ -15,3 +15,7 @@ Developed using:
 * JavaScript
 
 No libraries (except for [Font Awesome](https://fontawesome.com/)).
+
+## To do
+
+* Use [GULP] and [SASS]
