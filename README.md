@@ -19,3 +19,6 @@ No libraries (except for [Font Awesome](https://fontawesome.com/)).
 ## To do
 
 * Use [GULP](https://gulpjs.com/) and [SASS](https://sass-lang.com/)
+
+* 5 task demo view
+![](source/img/demo2.gif)
