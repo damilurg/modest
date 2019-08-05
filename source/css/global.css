@@ -230,6 +230,7 @@
         animation: banner-slider 48s ease-out infinite;
         opacity: 0;
         z-index: -1;
+        width: 100%;
     }
     
     .banner-slider {

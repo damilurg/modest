@@ -1,0 +1,176 @@
+ /* MEDIA QUERIES */
+ 
+ @media screen and (max-width: 1140px) {
+     /* HEADER */
+     .main-header .container {
+         justify-content: space-between;
+         padding: 0;
+     }
+     .logo {
+         margin-left: .725rem;
+     }
+     /* MENU */
+     .main-header__menu {
+         display: none;
+     }
+     /* mobile MENU */
+     .main-header__mobile-menu {
+         display: flex;
+     }
+     .banner-pagination {
+         right: 2rem;
+         bottom: -15rem;
+     }
+     .banner .content {
+         padding: 2rem 0 0 0;
+     }
+     .button {
+         width: 8rem;
+         margin: 0;
+     }
+     /* BURGER BUTTON */
+     .main-header__burger-button {
+         display: block;
+     }
+     /* CONTAINER */
+     .container {
+         padding: 0 5px 0 5px;
+     }
+     /* SECTION CONTENT */
+     section .content {
+         justify-content: center;
+         padding: 0;
+     }
+     .section-header {
+         padding: 2rem 0 2rem .5rem;
+     }
+     .about-brief {
+         max-width: 95%;
+         padding-right: 0;
+         margin: 1%;
+         align-items: center;
+     }
+     .about-values {
+         width: 95%;
+         max-width: 95%;
+         margin: 1%;
+     }
+     .team-card {
+         margin: 0.6rem 3.75rem;
+     }
+     .work-card,
+     .work-card__mask {
+         width: 21.25rem;
+     }
+     .work-button__box {
+         height: 3rem;
+         margin-top: 0;
+     }
+     .services-item {
+         width: 46%;
+     }
+     .features-item {
+         width: 20rem;
+         max-width: 100%;
+         margin: 0 1% 80px 1%;
+     }
+     .contact .content {
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+     }
+     .contact-information {
+         display: flex;
+         justify-content: center;
+         text-align: center;
+         max-width: 95%;
+     }
+     .contact-form {
+         min-width: 100%;
+         transform: translate(0, 0);
+         position: relative;
+         padding: 0 0 0 2rem;
+     }
+     .contact-form input {
+         width: 88%;
+     }
+     .contact-form .button {
+         margin: .5rem 0 1rem 0;
+     }
+     .footer .container {
+         justify-content: space-around;
+         flex-direction: column-reverse;
+         text-align: center;
+     }
+ }
+ 
+ @media screen and (max-width: 1024px) {
+     .banner-pagination {
+         right: 10rem;
+     }
+ }
+ 
+ @media screen and (max-width: 768px) {
+     .banner-pagination {
+         right: 5rem;
+     }
+     .about-brief {
+         align-items: flex-start;
+     }
+     .team-card {
+         margin: 0.6rem 2rem;
+     }
+     .contact-map {
+         border-top: 1px dashed #3a454d;
+         height: 12.5rem;
+     }
+     .contact-form {
+         padding: 0 1.2rem;
+     }
+     .contact-information {
+         height: 17.5rem;
+     }
+     .contact-information h3 {
+         margin: -1rem 0 1rem 0;
+     }
+     .contact-information p {
+         text-align: start;
+     }
+ }
+ 
+ @media screen and (max-width: 660px) {
+     .team-card {
+         margin: 0.6rem;
+     }
+     .contact-form {
+         padding: 0 0.6rem;
+     }
+     .contact-form__inputs {
+         flex-direction: column;
+     }
+     .contact-form label {
+         width: 107%;
+     }
+ }
+ 
+ @media screen and (max-width: 420px) {
+     .services-item {
+         min-width: 100%;
+     }
+ }
+ 
+ @media screen and (max-width: 375px) {
+     .work-card,
+     .work-card__mask {
+         width: 20rem;
+     }
+ }
+ 
+ @media screen and (max-width: 320px) {
+     .work-card__mask {
+         width: 18.4375rem;
+     }
+     .about-brief {
+         align-items: center;
+     }
+ }

@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Modest</title>
+    <meta property="og:title" content="Modest">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Fully responsive marketing agency website.">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:700,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,300" rel="stylesheet">
+    <link rel='stylesheet' href='source/css/global.css'>
+</head>
+
+<body>
+    <header class="main-header" id="main-header">
+        <div class="container">
+            <a href="#"><img class="logo" src="source/img/nukep.png" alt="Modest Logo"></a>
+            <nav class="main-header__mobile-menu" id="main-header__mobile-menu">
+                <a href="#" class="mobile-menu__link">Home</a>
+                <a href="#about" class="mobile-menu__link">About</a>
+                <a href="#team" class="mobile-menu__link">Team</a>
+                <a href="#work" class="mobile-menu__link">Work</a>
+                <a href="#services" class="mobile-menu__link">Services</a>
+                <a href="#features" class="mobile-menu__link">Features</a>
+                <a href="#contact" class="mobile-menu__link">Contact</a>
+            </nav>
+            <button class="main-header__burger-button" onclick="toggleMobileMenu(1)"><i class="fas fa-bars"></i></button>
+            <nav class="main-header__menu" id="main-header__menu">
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#team">Team</a>
+                <a href="#work">Work</a>
+                <a href="#services">Services</a>
+                <a href="#features">Features</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section style="height: 80vh;width: 100%;">
+            <div class="banner-slider">
+                <img class="banner-background" src="source/img/nuke1.jpg" alt="Nukeproof Mega275">
+                <img class="banner-background" src="source/img/nuke2.png" alt="Nukeproof Mega290">
+                <img class="banner-background" src="source/img/nuke3.jpg" alt="Nukeproof Pulse">
+
+            </div>
+            <div class="container">
+                <div class="content">
+                    <div class="banner-content" style="color:orange;margin-left:7rem">
+                        <h1>Welcome to Nukeproof World</h1>
+                        <h2>MEGAVALANCHE 2019 AWESOME TRAILS</h2>
+                        <p style="color:yellow;">CRASHES AND STEALING ROCKS</p>
+                        <div class="banner-content-buttons" style="
+                        display: flex;
+                    ">
+                            <a href="" class="button" style="background-color:yellow;color:black;">View More</a>
+                            <a href="" class="button" style="background-color:yellow; color:black;">Video Tour</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about" id="about" style="background-color:#212121;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 style="color:#c2c2c2;">ABOUT NUKEPROOF</h2>
+                </div>
+                <div class="content">
+                    <article class="about-brief">
+                        <p>Nuke Proof Industries, the brain child of founder John Muenzenmeyer, started life in 1990 from the city of Grand Rapids, Michigan. As a passionate rider, John’s aim was to create desirable, innovative and reliable solutions to
+                            meet the demands of the emerging 90’s mountain bike market. Nuke Proof Industries was pioneering in its design with the use of exotic materials such as titanium and carbon fibre. They were best known for their famous carbon/aluminium
+                            hubs.
+                        </p>
+                        <p>Nuke Proof Industries went on to produce titanium frames, carbon fibre handle bars and other innovative components, represented at races by athletes such as James Bethea, a local courier with an appetite for winning with a unique
+                            attitude to boot.</p>
+                        <div class="about-brief__links">
+                            <a href=""><i class="fab fa-facebook-f"></i></a>
+                            <a href=""><i class="fab fa-twitter"></i></a>
+                            <a href=""><i class="fab fa-google-plus"></i></a>
+                            <a href=""><i class="fab fa-dribbble"></i></a>
+                            <a href=""><i class="fab fa-behance"></i></a>
+                        </div>
+                    </article>
+                    <aside class="about-values">
+                        <div class="about-values__item">
+                            <div class="about-values__item-number" style="background-color:yellow;">
+                                <h4>01</h4>
+                            </div>
+                            <div class="about-values__item-text">
+                                <h3 style="color:orange;">Frame</h3>
+                                <p>Nukeproof Pulse, Scalp, Mega, Scout, Snap, etc</p>
+                            </div>
+                        </div>
+                        <div class="about-values__item">
+                            <div class="about-values__item-number" style="background-color:yellow;">
+                                <h4>02</h4>
+                            </div>
+                            <div class="about-values__item-text">
+                                <h3 style="color:orange;">Fork</h3>
+                                <p>DVO, Marzocchi, RockShox</p>
+                            </div>
+                        </div>
+                        <div class="about-values__item">
+                            <div class="about-values__item-number" style="background-color:yellow;">
+                                <h4>03</h4>
+                            </div>
+                            <div class="about-values__item-text">
+                                <h3 style="color:orange;">Wheels</h3>
+                                <p>Mavic Deemax, Dt Swiss, Nukeproof Generator
+                                </p>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+        <section class="team" id="team">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Products</h2>
+                </div>
+                <div class="content">
+                    <div class="team-card">
+                        <div class="team-card__mask">
+                            <div class="team-card__social">
+                                <div class="team-card__social-item">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+                                <div class="team-card__social-item">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </div>
+                                <div class="team-card__social-item">
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-card__name card-hovered">
+                                <h3>Bikes<br><small>Aluminium</small></h3>
+                            </div>
+                        </div>
+                        <div class="team-card__photo" style="background: url(source/img/nuk-1.jpg) center/cover no-repeat;"></div>
+                        <div class="team-card__name">
+                            <h3>Bikes<br><small>Aluminium</small></h3>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-card__mask">
+                            <div class="team-card__social">
+                                <div class="team-card__social-item">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+                                <div class="team-card__social-item">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </div>
+                                <div class="team-card__social-item">
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-card__name card-hovered">
+                                <h3>Components<br><small>Pedals</small></h3>
+                            </div>
+                        </div>
+                        <div class="team-card__photo" style="background: url(source/img/nuk-2.jpg) center;"></div>
+                        <div class="team-card__name">
+                            <h3>Components<br><small>Pedals</small></h3>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-card__mask">
+                            <div class="team-card__social">
+                                <div class="team-card__social-item">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+                                <div class="team-card__social-item">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </div>
+                                <div class="team-card__social-item">
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-card__name card-hovered">
+                                <h3>Ride Wear<br><small>Sam Hill</small></h3>
+                            </div>
+                        </div>
+                        <div class="team-card__photo" style="background: url(source/img/nuk-3.jpg) center/cover no-repeat;"></div>
+                        <div class="team-card__name">
+                            <h3>Ride Wear<br><small>Sam Hill</small></h3>
+                        </div>
+                    </div>
+                    <div class="team-card">
+                        <div class="team-card__mask">
+                            <div class="team-card__social">
+                                <div class="team-card__social-item">
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                </div>
+                                <div class="team-card__social-item">
+                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                </div>
+                                <div class="team-card__social-item">
+                                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                            <div class="team-card__name card-hovered">
+                                <h3>Workshop<br><small>Frames</small></h3>
+                            </div>
+                        </div>
+                        <div class="team-card__photo" style="background: url(source/img/nuk-4.jpg) center/cover no-repeat;"></div>
+                        <div class="team-card__name">
+                            <h3>Workshop<br><small>Frames</small></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="work" id="work">
+            <div class="container">
+                <div class="section-header dark-section">
+                    <h2>LATEST NEWS</h2>
+                </div>
+                <div class="content">
+                    <div class="work-card work-card__1">
+                        <div class="work-card__mask">
+                            <div class="work-card__more">
+                                <p>+</p>
+                            </div>
+                            <div class="work-card__name">
+                                <h3>BIKE CHECK: ADAM BRAYTON’S DISSENT 275</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card" style="background: url(source/img/new-1.jpg) center/cover no-repeat;">
+                        <div class="work-card__mask">
+                            <div class="work-card__more">
+                                <p>+</p>
+                            </div>
+                            <div class="work-card__name">
+                                <h3>MEGAVALANCHE 2019</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card" style="background: url(source/img/new-2.jpg) center/cover no-repeat;">
+                        <div class="work-card__mask">
+                            <div class="work-card__more">
+                                <p>+</p>
+                            </div>
+                            <div class="work-card__name">
+                                <h3>BIKE CHECK: SANDRA RUBESAM’S DISSENT 275</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card" style="background: url(source/img/new-3.jpg) center/cover no-repeat;">
+                        <div class="work-card__mask">
+                            <div class="work-card__more">
+                                <p>+</p>
+                            </div>
+                            <div class="work-card__name">
+                                <h3>MEGAVALANCHE SPEC SCOUT 275 CUSTOM </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card" style="background: url(source/img/new-4.jpg) center/cover no-repeat;">
+                        <div class="work-card__mask">
+                            <div class="work-card__more">
+                                <p>+</p>
+                            </div>
+                            <div class="work-card__name">
+                                <h3>
+                                    GMBN’S BLAKE SAMPSON’S </h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-card work-card__2">
+                        <div class="work-card__mask">
+                            <div class="work-card__more">
+                                <p>+</p>
+                            </div>
+                            <div class="work-card__name">
+                                <h3>Partnership guidelines</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="work-button__box">
+                        <a href="#" class="button">Show me more</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>What we do.</h2>
+                </div>
+                <div class="content">
+                    <div class="services-item">
+                        <img src="source/img/nukep.png" style="background-color:black;" alt="nuke logo">
+                        <h3>Bikes</h3>
+                        <p>Excellent bikes frames, lula trulala</p>
+                    </div>
+                    <div class="services-item">
+                        <img src="source/img/nukep.png" style="background-color:black;" alt="nuke logo">
+                        <h3>Frames</h3>
+                        <p>Excellent bikes frames, lula trulala</p>
+                    </div>
+                    <div class="services-item">
+                        <img src="source/img/nukep.png" style="background-color:black;" alt="nuke logo">
+                        <h3>Forks</h3>
+                        <p>Excellent bikes frames, lula trulala</p>
+                    </div>
+                    <div class="services-item">
+                        <img src="source/img/nukep.png" style="background-color:black;" alt="nuke logo">
+                        <h3>Shox</h3>
+                        <p>Marzocchi sosat`</p>
+                    </div>
+                    <div class="services-item">
+                        <img src="source/img/nukep.png" style="background-color:black;" alt="nuke logo">
+                        <h3>Bikes</h3>
+                        <p>Excellent bikes frames, lula trulala</p>
+                    </div>
+                    <div class="services-item">
+                        <img src="source/img/nukep.png" style="background-color:black;" alt="nuke logo">
+                        <h3>Frames</h3>
+                        <p>Excellent bikes frames, lula trulala</p>
+                    </div>
+                    <div class="services-item">
+                        <img src="source/img/nukep.png" style="background-color:black;" alt="nuke logo">
+                        <h3>Forks</h3>
+                        <p>Excellent bikes frames, lula trulala</p>
+                    </div>
+                    <div class="services-item">
+                        <img src="source/img/nukep.png" style="background-color:black;" alt="nuke logo">
+                        <h3>Shox</h3>
+                        <p>Marzocchi sosat`</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="features" id="features">
+            <div class="container">
+                <div class="section-header dark-section">
+                    <h2>Riders</h2>
+                </div>
+                <div class="content">
+                    <div class="features-item">
+                        <img src="source/img/rid-2.jpg" alt="Sam Hill" style="height: 380px;width: 363px;">
+                        <h3>Sam Hill</h3>
+                        <p>Enduro</p>
+                        <p>Chain Reaction Cycles - Mavic</p>
+                    </div>
+                    <div class="features-item">
+                        <img src="source/img/rid-1.jpg" alt="Elliot Grant" style="height: 380px;width: 363px;">
+                        <h3>Elliot Heap</h3>
+                        <p>Enduro
+                        </p>
+                        <p>Chain Reaction Cycles - Mavic</p>
+                    </div>
+                    <div class="features-item">
+                        <img src="source/img/rid-3.jpg" alt="Nigel Page" style="height: 380px;width: 363px;">
+                        <h3>Kelan Grant</h3>
+                        <p>Enduro</p>
+                        <p>Chain Reaction Cycles - Mavic</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>dilers</h2>
+                </div>
+            </div>
+            <div class="contact-map">
+                <iframe width="100%" src="https://maps.google.com/maps?width=100%&amp;height=346&amp;hl=en&amp;q=+(London)&amp;ie=UTF8&amp;t=&amp;z=12&amp;iwloc=B&amp;output=embed"></iframe>
+            </div>
+            <div class="container">
+                <div class="content">
+                    <div class="contact-information">
+                        <h3>Contact information</h3>
+                        <p>EMAIL US</p>
+                        info@nukeproof.com
+
+                    </div>
+                    <form action="post" class="contact-form">
+                        <div class="contact-form__inputs">
+                            <label for="name">Your name<input type="text" id="name"></label>
+                            <label for="email">Your email<input type="text" id="email"></label>
+                        </div>
+                        <div class="contact-form__message">
+                            <label for="message">Your message<textarea name="message" id="message"></textarea></label>
+                        </div>
+                        <a class="button" id="submit" style="background-color:orange;">Send to Nukeproof</a>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <p style="color:orangered;" ">Copy+Paste information from nukeproof.com. I wanted to sleep.</p>
+            <div class=" footer-social ">
+                <a href=" "><i class="fab fa-twitter "></i></a>
+                <a href=" "><i class="fab fa-facebook-f "></i></a>
+                <a href=" "><i class="fab fa-skype "></i></a>
+                <a href=" "><i class="fab fa-behance "></i></a>
+                <a href=" "><i class="fab fa-linkedin-in "></i></a>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script src='source/js/menu.js'></script>
+</body>
+
+</html>
