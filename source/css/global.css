@@ -96,21 +96,6 @@ section .content {
 }
 
 
-/* MEDIA QUERIES */
-
-@media screen and (max-width: 1140px) {
-    /* CONTAINER */
-    .container {
-        padding: 10px;
-    }
-    /* SECTION CONTENT */
-    section .content {
-        justify-content: space-around;
-        padding: 0;
-    }
-}
-
-
 /* HEADER */
 
 .main-header {
@@ -205,25 +190,6 @@ section .content {
     z-index: 20;
 }
 
-@media screen and (max-width: 1140px) {
-    /* HEADER */
-    .main-header .container {
-        justify-content: space-between;
-        padding: 0;
-    }
-    .logo {
-        margin-left: 3rem;
-    }
-    /* MENU */
-    .main-header__menu {
-        display: none;
-    }
-    /* mobile MENU */
-    .main-header__mobile-menu {
-        display: flex;
-    }
-}
-
 
 /* SECTION HEADER */
 
@@ -241,15 +207,14 @@ section .content {
     font-weight: 700;
     letter-spacing: 0;
     color: var(--senary-color);
-    opacity: 0.95;
 }
 
 .section-header h2::before {
     content: ".";
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     background-color: var(--tertiary-color);
     color: var(--tertiary-color);
-    margin-right: 15px;
+    margin-right: 5px;
 }
 
 .dark-section h2::before {
@@ -259,12 +224,6 @@ section .content {
 
 .dark-section h2 {
     color: var(--primary-color);
-}
-
-@media screen and (max-width: 1140px) {
-    .section-header {
-        padding-left: 5%;
-    }
 }
 
 
@@ -296,7 +255,7 @@ section .content {
 
 .banner .content {
     justify-content: flex-start;
-    padding-left: 6.5rem;
+    margin-left: 25px;
 }
 
 .banner-content {
@@ -304,6 +263,7 @@ section .content {
     flex-direction: column;
     justify-content: center;
     width: 624px;
+    max-width: 100%;
     color: var(--primary-color);
     height: 100%;
     z-index: 1;
@@ -329,12 +289,6 @@ section .content {
 
 .banner-content__buttons a:first-of-type {
     margin-right: 6px;
-}
-
-@media screen and (max-width: 1140px) {
-    .banner {
-        height: 60vh;
-    }
 }
 
 @keyframes banner-slider {
@@ -406,24 +360,11 @@ section .content {
 }
 
 .banner-pagination {
-    display: flex;
-    margin: 10rem 10rem 0 0;
-    z-index: 0;
-}
-
-@media screen and (max-width:1024px) {
-    .banner-pagination {
-        margin: 25rem 10rem 0 0;
-    }
-    .banner .content {
-        padding-left: 9rem;
-    }
-}
-
-@media screen and (max-width:768px) {
-    .banner-pagination {
-        margin: 15rem 10rem 0 0;
-    }
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    right: 2rem;
+    bottom: -15rem;
 }
 
 .banner-pagination label {
@@ -564,31 +505,11 @@ input:nth-of-type(3):checked~.banner-pagination label:nth-of-type(3):after,
 }
 
 .about-values__item-text h3 {
-    opacity: 0.95;
     color: var(--secodary-color);
     font-weight: 700;
     text-transform: uppercase;
     font-size: 18px;
     margin-bottom: 10px;
-}
-
-
-/* MEDIA QUERIES */
-
-@media screen and (max-width: 1140px) {
-    .about-brief {
-        width: 95%;
-        max-width: 95%;
-        text-align: center;
-        padding-right: 0;
-        align-items: center;
-        margin: 1%;
-    }
-    .about-values {
-        width: 95%;
-        max-width: 95%;
-        margin: 1%;
-    }
 }
 
 
@@ -652,13 +573,6 @@ input:nth-of-type(3):checked~.banner-pagination label:nth-of-type(3):after,
     color: var(--detail-color);
 }
 
-@media screen and (max-width: 1140px) {
-    /* BURGER BUTTON */
-    .main-header__burger-button {
-        display: block;
-    }
-}
-
 
 /* CONTACT */
 
@@ -698,7 +612,6 @@ input:nth-of-type(3):checked~.banner-pagination label:nth-of-type(3):after,
     margin-bottom: 40px;
     font-weight: 700;
     text-indent: 0.5rem;
-    opacity: 0.95;
 }
 
 .contact-information p {
@@ -753,28 +666,6 @@ textarea {
     height: 160px;
 }
 
-@media screen and (max-width: 1140px) {
-    .contact .content {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .contact-information {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        max-width: 95%;
-    }
-    .contact-form {
-        min-width: 100%;
-        transform: translate(0, 0);
-        position: relative;
-    }
-    .contact-form label {
-        width: 100%;
-    }
-}
-
 
 /* FEATURES */
 
@@ -788,7 +679,6 @@ textarea {
     justify-content: space-between;
     height: 380px;
     width: 363px;
-    max-width: 363px;
     margin-bottom: 50px;
     color: var(--primary-color);
 }
@@ -796,7 +686,6 @@ textarea {
 .features-item h3 {
     font-size: 18px;
     text-transform: uppercase;
-    opacity: 0.95;
     margin-top: 20px;
     font-weight: 700;
 }
@@ -804,14 +693,6 @@ textarea {
 .features-item p {
     opacity: 0.95;
     color: var(--primary-color);
-}
-
-@media screen and (max-width: 1140px) {
-    .features-item {
-        width: 340px;
-        max-width: 340px;
-        margin: 0 1% 80px 1%;
-    }
 }
 
 
@@ -846,13 +727,6 @@ textarea {
     text-align: center;
 }
 
-@media screen and (max-width: 1140px) {
-    .services-item {
-        width: 46%;
-        min-width: 340px;
-    }
-}
-
 
 /* TEAM */
 
@@ -869,7 +743,6 @@ textarea {
 }
 
 .team-card {
-    flex: 0 0 22.8%;
     margin: 0.6rem;
 }
 
@@ -1011,7 +884,6 @@ textarea {
     font-size: 45px;
     font-weight: 700;
     color: var(--primary-color);
-    opacity: 0.95;
 }
 
 .work-card__name {
@@ -1062,14 +934,6 @@ textarea {
     width: 100%;
 }
 
-@media screen and (max-width: 1140px) {
-    .work-card,
-    .work-card__mask {
-        width: 340px;
-        max-width: 340px;
-    }
-}
-
 
 /* FOOTER */
 
@@ -1104,10 +968,133 @@ textarea {
     color: var(--detail-color);
 }
 
+
+/* MEDIA QUERIES */
+
 @media screen and (max-width: 1140px) {
+    /* CONTAINER */
+    .container {
+        padding: 0 5px 0 5px;
+    }
+    /* SECTION CONTENT */
+    section .content {
+        justify-content: space-around;
+        padding: 0;
+    }
+    .section-header {
+        padding: 2rem 0 2rem 0.5rem;
+    }
+    /* HEADER */
+    .main-header .container {
+        justify-content: space-between;
+        padding: 0;
+    }
+    .logo {
+        margin-left: 0.5rem;
+    }
+    /* MENU */
+    .main-header__menu {
+        display: none;
+    }
+    /* mobile MENU */
+    .main-header__mobile-menu {
+        display: flex;
+    }
+    .banner-pagination {
+        right: 2rem;
+        bottom: -14rem;
+    }
+    .banner .content {
+        padding: 2rem 0 0 0;
+    }
+    .button {
+        width: 8rem;
+    }
+    .work-button__box {
+        height: 3rem;
+    }
+    .about-brief {
+        max-width: 95%;
+        padding-right: 0;
+        margin: 1%;
+    }
+    .about-values {
+        width: 95%;
+        max-width: 95%;
+        margin: 1%;
+    }
+    /* BURGER BUTTON */
+    .main-header__burger-button {
+        display: block;
+    }
+    .contact .content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-information {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        max-width: 95%;
+    }
+    .contact-form {
+        min-width: 100%;
+        transform: translate(0, 0);
+        position: relative;
+    }
+    .features-item {
+        width: 320px;
+        max-width: 100%;
+        margin: 0 1% 80px 1%;
+    }
+    .services-item {
+        width: 46%;
+        min-width: 100%;
+    }
+    .work-card,
+    .work-card__mask {
+        width: 340px;
+    }
     .footer .container {
         justify-content: space-around;
         flex-direction: column-reverse;
         text-align: center;
+    }
+}
+
+@media screen and (width: 1024px) {
+    .banner-pagination {
+        right: 10rem;
+        bottom: -15rem;
+    }
+}
+
+@media screen and (width: 768px) {
+    .banner-pagination {
+        right: 5rem;
+        bottom: -10rem;
+    }
+}
+
+@media screen and (width: 320px) {
+    .work-card__mask {
+        width: 18.4375rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-map {
+        border-top: 1px dashed #3a454d;
+        height: 12.5rem;
+    }
+    .contact-information {
+        height: 200px;
+    }
+    .contact-information h3 {
+        margin: -1rem 0 1rem 0;
+    }
+    .contact-information p {
+        text-align: start;
     }
 }
