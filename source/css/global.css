@@ -238,20 +238,21 @@ section .content {
 }
 
 .banner-background {
-    top: 0;
-    left: 0;
     position: absolute;
     animation: banner-slider 48s ease-out infinite;
     opacity: 0;
     z-index: -1;
+    width: 100%;
     min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
 }
 
 .banner-slider {
     display: flex;
     justify-content: center;
     overflow: hidden;
-    min-width: 100%;
+    width: 100%;
 }
 
 .banner .content {
@@ -304,14 +305,17 @@ section .content {
 
 .banner-background:nth-child(2) {
     animation-delay: 12s;
+    width: 98%;
 }
 
 .banner-background:nth-child(3) {
     animation-delay: 24s;
+    width: 98%;
 }
 
 .banner-background:nth-child(4) {
     animation-delay: 36s;
+    width: 98%;
 }
 
 
